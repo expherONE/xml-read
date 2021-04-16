@@ -10,7 +10,7 @@
 <body>
   <app-root></app-root>
   <div id='content'>
-    <table id='books' cellpadding='05px' style="text-align:left;">
+    <table id='books' cellpadding='5px' style="text-align:left;">
         <thead>
             <tr>
                 <th>Author</th>
@@ -25,7 +25,7 @@
     </table>
   </div>
 <script>
-  let xmlContent = '';
+let xmlContent = '';
 let tableBooks = document.getElementById('books');
 fetch('./assets/books.xml').then((response)=> {
    response.text().then((xml)=>{
