@@ -8,7 +8,12 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+//para poder instalar correctamente este modulo se deben instalar los componentes de timer
+//npm install timers
+//npm install --save stream timers
+
   title = 'xml-saver';
+
 
   public xmlItems: any;  
   constructor(private _http: HttpClient) { this.loadXML(); }  
